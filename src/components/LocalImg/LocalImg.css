@@ -1,0 +1,16 @@
+.local_imgs{
+    display: flex;
+    gap: 10px;
+    padding: 20px 0;
+}
+.local_img{
+    position: relative;
+}
+.local_img svg{
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    transform: translate(-50%,-50%);
+    color:crimson;
+    
+}

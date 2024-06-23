@@ -17,8 +17,7 @@ header{
     z-index: 100;
     top: 0;
     left: 0;
-    right: 0;
-    padding: 20px 0;
+    right: 0;`
     box-shadow: 1px 1px 8px 1px  rgb(225, 225, 225); 
 }
 .nav img{

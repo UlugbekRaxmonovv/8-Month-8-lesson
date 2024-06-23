@@ -6,15 +6,13 @@ const Product = ({data}) => {
 
 
     let product = data?.map((item) =>(
-        <div className="wrapper">
-            <div className="card">
+            <div className="card" key={item.id}>
              <div className="hammasi">
                 <h4>{item.title}</h4>
                 <h3>{item.description}</h3>
                 <button>Buy Now</button>
              </div>
             </div>
-        </div>
     ))
     return (
         <div>

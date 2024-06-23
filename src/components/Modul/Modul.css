@@ -28,6 +28,7 @@
     border-radius: 24px;
     animation: modul .5s forwards;
     overflow: auto;
+    z-index: 1000;
 }
 
 @keyframes modul{
@@ -45,7 +46,6 @@
     outline: none;
     border-radius: 2px;
     padding: 0 5px;
-    z-index: 10022200;
 }
 .modul textarea{
     width: 100%;
