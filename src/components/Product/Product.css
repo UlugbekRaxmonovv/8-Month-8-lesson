@@ -1,0 +1,78 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 10px 0;
+    margin-top: 80px ;
+}
+.card{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    padding: 50px 20px;
+    
+}
+.hammasi{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.card h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.card h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.card p{
+    font-size: 15px;
+    margin: 10px 0;
+}
+.card button{
+    position: absolute;
+    top: 155%;
+    left: 25%;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 8px;
+    opacity: 0;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 0;
+    color: white;
+    background-color: rgb(0, 255, 162);
+    transition: all 0.3s ease-in-out;
+}
+.card:hover button{
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+}

@@ -1,0 +1,70 @@
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: #0006;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: overlay .5s forwards;
+
+}
+@keyframes overlay{
+    to{
+        opacity: 1;
+    }
+}
+.modul{
+    width: 500px;
+    height: 60vh;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%) scale(.8);
+    opacity: 0;
+    padding: 30px;
+    border-radius: 24px;
+    animation: modul .5s forwards;
+    overflow: auto;
+}
+
+@keyframes modul{
+    to{
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+.modul input ,
+.modul button{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    margin-top: 16px;
+    outline: none;
+    border-radius: 2px;
+    padding: 0 5px;
+    z-index: 10022200;
+}
+.modul textarea{
+    width: 100%;
+    height: 80px;
+    resize: none;
+    border: 1px solid #ddd;
+    margin-top: 16px;
+    outline: none;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+
+@media(min-width: 1100px){
+    .modul::-webkit-scrollbar{
+        width: 6px;
+    }
+    .modul::-webkit-scrollbar-thumb{
+        border-radius: 50px;
+        background-color: red;
+    }
+}

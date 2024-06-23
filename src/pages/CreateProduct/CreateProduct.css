@@ -1,0 +1,23 @@
+.hammasi_all{
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+.btn1 button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(159, 254, 86);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+}
