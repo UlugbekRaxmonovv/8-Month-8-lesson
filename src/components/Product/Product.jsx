@@ -1,16 +1,19 @@
 import React from 'react';
 import './Product.css'
+import {useDeleteProductMutation} from '../../context/api/ProductApi'
 
 const Product = ({data}) => {
-    console.log(data);
-
+    const [deleteProduct] = useDeleteProductMutation();
+    const DeletProduct = (id) => {
+        deleteProduct(id);
+    }
 
     let product = data?.map((item) =>(
             <div className="card" key={item.id}>
              <div className="hammasi">
                 <h4>{item.title}</h4>
                 <h3>{item.description}</h3>
-                <button>Buy Now</button>
+                <button onClick={() => DeletProduct(item.id)}>Delet</button>
              </div>
             </div>
     ))

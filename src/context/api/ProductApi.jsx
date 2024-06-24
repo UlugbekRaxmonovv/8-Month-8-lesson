@@ -13,7 +13,7 @@ export const productApi = api.injectEndpoints({
     // Post request
     createProduct: build.mutation({
       query: (body)=> ({
-        url: "/products",
+        url: "/products/create",
         method: "POST",
         body
       }),
@@ -31,17 +31,27 @@ export const productApi = api.injectEndpoints({
     // Delete request
     deleteProduct: build.mutation({
       query: (id)=> ({
-        url:`/`,
+        url:`/products/${id}`,
         method: "DELETE"
       }),
       invalidatesTags: ["Product"]
-    })
+    }),
+    postSignIn: build.mutation({
+      query: (body)=>({
+          url: "/auth/sign-in",
+          method:"POST",
+          body
+      }),
+      invalidatesTags: ["User"]
+  }) 
   }),
+ 
 })
 
 export const {
     useGetProductsQuery,
-  useDeleteProductMutation,
+    useDeleteProductMutation,
   useCreateProductMutation,
-  useUpdateProductMutation
+  useUpdateProductMutation,
+  usePostSignInMutation
 } = productApi
